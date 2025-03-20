@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Redressal Form</title>
+    <link rel="stylesheet" href="migrantconnect.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center fw-bolder">Grievance Redressal Form</h2>
+        <form id="grievanceForm">
+
+
+            <!-- Grievance Details Section -->
+            <div class="form-group">
+                <h5>Title</h5>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject"class="form-control" required>
+                <label for="grievanceCategory">Grievance Category</label>
+                <select class="form-control" id="grievanceCategory" name="grievanceCategory" required>
+                    <option value="">--Select a category--</option>
+                    <option value="Employment">Employment Issues</option>
+                    <option value="Healthcare">Healthcare Services</option>
+                    <option value="Housing">Housing and Accommodation</option>
+                    <option value="Transportation">Transportation Problems</option>
+                    <option value="Food">Food Quality/Availability</option>
+                    <option value="Wages">Wages and Salary Issues</option>
+                    <option value="Documentation">Documentation/ID Issues</option>
+                    <option value="Legal">Legal and Safety Concerns</option>
+                    <option value="Staff Behavior">Staff Behavior</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="grievanceDescription">Description</label>
+                <textarea class="form-control" id="grievanceDescription" name="grievanceDescription" rows="4"
+                    required></textarea>
+            </div>
+
+            <h4>Upload Evidence (if any)</h4>
+            <div class="form-group">
+                <label for="imageUpload" class="text-info">Upload Image</label>
+                <input type="file" class="form-control upload-btn h-100" id="imageUpload" name="imageUpload"
+                    accept="image/*" onchange="displayFile(event, 'imageList')">
+                <ul id="imageList" class="file-list"></ul>
+            </div>
+          
+            <div class="form-group">
+                <label for="fileUpload" class="text-info">Upload Other Files</label>
+                <input type="file" class="form-control upload-btn h-100" id="fileUpload" name="fileUpload"
+                    accept=".pdf,.doc,.docx" onchange="displayFile(event, 'fileList')">
+                <ul id="fileList" class="file-list"></ul>
+            </div>
+            <!-- Consent Section -->
+            <div class="p-4">
+                <label class="form-check-label  mb-3">
+                    <input type="checkbox" class="form-check-input" name="consent" required>
+                    I hereby consent to the collection and processing of my personal data for the purpose of addressing
+                    this
+                    grievance.
+                </label>
+                <div class="d-flex justify-content-center mt-3">
+                    <div class="btn-group w-50" role="group">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+<script src="migrantconnect.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
