@@ -84,6 +84,7 @@ body {
 ul {
     list-style-type: none; 
     padding: 0; 
+}
 
 .about-us-what-we-stand li {
     margin-bottom: 15px; 
@@ -115,4 +116,4 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+};
