@@ -1,108 +1,119 @@
 * {
     margin: 0%;
-    padding: 0%;
+    padding: 0%
 }
+
 .text-box {
-    background: url('./photos/mc-img-1.jpg') no-repeat center center; 
-    background-size: cover; 
-    color: rgb(0, 0, 0); 
-    padding: 100px 0; 
+    background: url('./photos/mc-img-1.jpg')no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    padding: 100px 0
 }
+
 .text-box div {
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border: 1px solid rgba(255, 255, 255, 0.3)
 }
+
 .card-effect:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2)
 }
+
 .container-what-we-do {
-    margin-top:5vh;
-    
-} 
+    margin-top: 5vh
+}
+
 .container-about-us {
-    margin-top:5vh;
+    margin-top: 5vh;
     background-color: #f8f9fa;
     padding: 50px 20px;
-    display:block;
+    display: block
 }
+
 .about-us {
-    background-color: #198754;
+    background-color: #198754
 }
+
 .about-us h2 {
     font-weight: bold;
-    color: #198754;
+    color: #198754
 }
 
 .about-us p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.8
 }
 
-.about-us .highlight {
+.about-us.highlight {
     font-weight: bold;
     color: #198754;
-    margin-top:20px;
+    margin-top: 20px
 }
+
 body {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa
 }
 
 .contact {
     background-color: #198754;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 0
 }
 
 .contact-form {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 30px
 }
 
 .contact-form h2 {
     color: #198754;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .btn-submit {
     background-color: #198754;
     border: none;
-    color: white;
+    color: white
 }
 
 .btn-submit:hover {
-    background-color: #155d40;
+    background-color: #155d40
 }
+
 ul {
-    list-style-type: none; 
-    padding: 0; 
+    list-style-type: none;
+    padding: 0
 }
 
 .about-us-what-we-stand li {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     padding: 15px;
-    background-color: #f8f9fa; 
-    border-left: 5px solid #198754; 
-    border-radius: 8px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #f8f9fa;
+    border-left: 5px solid#198754;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
 }
+
 .about-us-what-we-stand li span.highlight {
-    color: #198754; 
-    font-weight: bold; 
+    color: #198754;
+    font-weight: bold
 }
+
 .about-us-what-we-stand li:hover {
-    background-color: #e9ecef; 
-    transform: scale(1.02); 
-    transition: all 0.3s ease;
+    background-color: #e9ecef;
+    transform: scale(1.02);
+    transition: all 0.3s ease
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -115,5 +126,7 @@ ul {
     transition: opacity 0.3s, z-index 0.3s;
     display: flex;
     justify-content: center;
-    align-items: center;
-};
+    align-items: center
+}
+
+;
